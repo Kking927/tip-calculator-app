@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator App</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
 
+    <main class="calculator">
+      <img 
+        src="https://raw.githubusercontent.com/Kking927/tip-calculator-app/bb7fecf52b6e10a826e26efe282378815691d563/images/logo.svg" 
+        alt="Splitter logo" 
+        class="calculator__logo"
+      >
+
+      <form class="calculator__card" aria-label="Tip calculator">
+        
+        <!-- Input Section -->
+        <div class="calculator__inputs">
+          
+          <!-- Bill Field -->
+          <div class="calculator__field">
+            <label for="bill" class="calculator__label">Bill</label>
+            <div class="calculator__input-container">
+              <img 
+                src="https://raw.githubusercontent.com/Kking927/tip-calculator-app/b637e645742a5333f86c90fc024631e7cc9255e8/images/icon-dollar.svg" 
+                alt="" 
+                aria-hidden="true" 
+                class="calculator__icon"
+              >
+              <input 
+                type="number" 
+                id="bill" 
+                name="bill" 
+                class="calculator__input" 
+                placeholder="0" 
+                step="0.01" 
+                min="0"
+              >
+            </div>
+          </div>
+
+          <!-- Tip Selection Fieldset -->
+          <fieldset class="calculator__fieldset">
+            <legend class="calculator__label">Select Tip %</legend>
+            <div class="calculator__tip-grid">
+              <button type="button" class="calculator__tip-btn" data-tip="5">5%</button>
+              <button type="button" class="calculator__tip-btn" data-tip="10">10%</button>
+              <button type="button" class="calculator__tip-btn" data-tip="15">15%</button>
+              <button type="button" class="calculator__tip-btn" data-tip="25">25%</button>
+              <button type="button" class="calculator__tip-btn" data-tip="50">50%</button>
+              <input 
+                type="number" 
+                id="custom-tip" 
+                name="custom-tip" 
+                class="calculator__input calculator__input--custom" 
+                placeholder="Custom" 
+                min="0"
+              >
+            </div>
+          </fieldset>
+
+          <!-- Number of People Field -->
+          <div class="calculator__field">
+            <div class="calculator__label-container">
+              <label for="people" class="calculator__label">Number of People</label>
+              <span class="calculator__error-message" id="people-error" aria-live="polite"></span>
+            </div>
+            <div class="calculator__input-container">
+              <img 
+                src="https://raw.githubusercontent.com/Kking927/tip-calculator-app/b637e645742a5333f86c90fc024631e7cc9255e8/images/icon-person.svg" 
+                alt="" 
+                aria-hidden="true" 
+                class="calculator__icon"
+              >
+              <input 
+                type="number" 
+                id="people" 
+                name="people" 
+                class="calculator__input" 
+                placeholder="0" 
+                min="1" 
+                step="1"
+              >
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Output Results Section -->
+        <div class="calculator__results">
+          
+          <div class="calculator__result-row">
+            <div class="calculator__result-label">
+              <span class="calculator__result-title">Tip Amount</span>
+              <span class="calculator__result-subtitle">/ person</span>
+            </div>
+            <p class="calculator__result-value" aria-live="polite">$0.00</p>
+          </div>
+
+          <div class="calculator__result-row">
+            <div class="calculator__result-label">
+              <span class="calculator__result-title">Total</span>
+              <span class="calculator__result-subtitle">/ person</span>
+            </div>
+            <p class="calculator__result-value" aria-live="polite">$0.00</p>
+          </div>
+
+          <button type="reset" class="calculator__reset-btn" disabled>Reset</button>
+          
+        </div>
+
+      </form>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
