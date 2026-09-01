@@ -323,7 +323,7 @@ input[type="number"] {
 
 /* Page Load / Disabled State */
 .calculator__reset-btn:disabled {
-  background-color: color-mix(in srgb, var(--green-900) 80%, var(--grey-200));
+  background-color: color-mix(in srgb, var(--green-900), var(--green-400));
   color: color-mix(in srgb, var(--green-900) 30%, transparent);
   cursor: not-allowed;
 }
