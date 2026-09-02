@@ -360,11 +360,11 @@ input[type="number"] {
 
   .calculator {
     width: auto;
-    gap: clamp(3rem, 1.5rem + 3.5vw, 5rem);
   }
 
   .calculator__logo {
     margin-block-start: 0;
+    margin-block-end: clamp(3rem, 1.5rem + 3.5vw, 5rem);
   }
 
   .calculator__card {
