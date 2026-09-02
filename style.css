@@ -65,8 +65,8 @@ body {
 }
 
 .calculator__logo {
-  margin-block-start: clamp(3rem, 1rem + 5vw, 6rem);
-  margin-block-end: clamp(2.5rem, 1.5rem + 3.5vw, 4rem);
+  margin-block-start: clamp(2rem, 1rem + 2.5vw, 5rem);
+  margin-block-end: clamp(2rem, 1.5rem + 2vw, 3.5rem);
 }
 
 /* Fieldset Reset */
