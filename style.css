@@ -21,7 +21,7 @@
   --font-family: "Space Mono", monospace;
   --fw-bold: 700;
   --fs-inputs: 1.5rem; /* 24px */
-  --fs-number: clamp(1.5rem, 1.2359rem + 1.1268vw, 2.25rem);
+  --fs-number: clamp(1.5rem, 0.9718rem + 2.2535vw, 3rem);
 }
 
 /* ==========================================================================
@@ -64,7 +64,8 @@ body {
 }
 
 .calculator__logo {
-  margin-block: clamp(2.5rem, 2rem + 3vw, 4.5rem) clamp(2.25rem, 1.75rem + 2.5vw, 4rem);
+  margin-block-start: 2.5rem;
+  margin-block-end: clamp(2.5rem, 1.62rem + 3.76vw, 5rem);
 }
 
 /* Fieldset Reset */
@@ -324,7 +325,7 @@ input[type="number"] {
 .calculator__reset-btn {
   color: var(--green-900);
   background-color: var(--green-400);
-  padding: 0.75rem;
+  padding: clamp(0.5rem, 0.412rem + 0.376vw, 0.75rem);
   border-radius: 0.3125rem;
   text-transform: uppercase;
   font-size: 1.25rem;
@@ -364,7 +365,7 @@ input[type="number"] {
 
   .calculator__logo {
     margin-block-start: 0;
-    margin-block-end: clamp(2.5rem, 2rem + 1.5vw, 3.5rem);
+    margin-block-end: clamp(2.5rem, 1.62rem + 3.76vw, 5rem);
   }
 
   .calculator__card {
