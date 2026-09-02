@@ -360,6 +360,7 @@ input[type="number"] {
 
   .calculator {
     width: auto;
+    gap: clamp(3rem, 1.5rem + 3.5vw, 5rem);
   }
 
   .calculator__logo {
