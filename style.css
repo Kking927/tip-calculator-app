@@ -356,9 +356,6 @@ input[type="number"] {
    Desktop Layout
    ========================================================================== */
 @media (min-width: 60em) {
-  body {
-    justify-content: center;
-  }
 
   .calculator {
     min-height: auto;
