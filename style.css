@@ -49,8 +49,6 @@ body {
 
 .calculator {
   width: 100%;
-  min-height: 100vh;
-  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +63,7 @@ body {
 }
 
 .calculator__logo {
-  margin-block-start: clamp(2rem, 1rem + 5vw, 9.375rem);
+  margin-block-start: clamp(2rem, 1rem + 5vw, 4rem);
   margin-block-end: clamp(2.5rem, 1.5rem + 3.5vw, 4rem);
 }
 
@@ -356,10 +354,16 @@ input[type="number"] {
    Desktop Layout
    ========================================================================== */
 @media (min-width: 60em) {
+  body {
+    justify-content: center; /* Dead-centers the entire component vertically */
+  }
 
   .calculator {
-    min-height: auto;
     width: auto;
+  }
+
+  .calculator__logo {
+    margin-block-start: 0;
   }
 
   .calculator__card {
