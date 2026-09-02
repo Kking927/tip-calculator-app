@@ -65,8 +65,8 @@ body {
 }
 
 .calculator__logo {
-  margin-block-start: 2.5rem;
-  margin-block-end: clamp(2.5rem, 1.62rem + 3.76vw, 5rem);
+  margin-block-start: clamp(2rem, 1rem + 3.5vw, 5rem);
+  margin-block-end: clamp(2.5rem, 1.5rem + 3.5vw, 5rem);
 }
 
 /* Fieldset Reset */
@@ -363,11 +363,6 @@ input[type="number"] {
     min-height: auto;
     width: auto;
     justify-content: center;
-  }
-
-  .calculator__logo {
-    margin-block-start: 0;
-    margin-block-end: clamp(2.5rem, 1.62rem + 3.76vw, 5rem);
   }
 
   .calculator__card {
