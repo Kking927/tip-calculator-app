@@ -58,21 +58,14 @@ This project was a good opportunity to deepen my understanding of vanilla JavaSc
 
 1. **Advanced Dynamic Styling with CSS `color-mix()`**
 
-    Instead of hardcoding dedicated hex or HSL values for state variations, I learned how to use the modern CSS `color-mix()` function.
+    Instead of hardcoding dedicated values for hover states, I used the modern CSS `color-mix()` function to generate fluid interaction states programmatically.
     
     ```css
-    /* Hover blending for buttons */
+    /* Dynamic hover state using color-mix */
     .calculator__tip-btn:hover,
-    .calculator__reset-btn:hover {
+    .calculator__reset-btn:hover:not(:disabled) {
       color: var(--green-900);
       background-color: color-mix(in srgb, var(--green-400), var(--grey-200));
-    }
-    
-    /* Dynamic disabled state using color-mix */
-    .calculator__reset-btn:disabled {
-      background-color: color-mix(in srgb, var(--green-900), var(--green-400));
-      color: color-mix(in srgb, var(--green-900) 30%, transparent);
-      cursor: not-allowed;
     }
     ```
 
