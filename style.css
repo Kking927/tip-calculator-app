@@ -40,9 +40,9 @@
 .sr-only {
   position: absolute;
   width: clamp(0.0625rem, 0.05rem + 0.05vw, 0.125rem);
-  height: 1px;
+  height: clamp(0.0625rem, 0.05rem + 0.05vw, 0.125rem);
   padding: 0;
-  margin: -0.0625rem;
+  margin: clamp(-0.0625rem, -0.05rem - 0.05vw, -0.125rem);
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
@@ -117,9 +117,9 @@ input[type="number"] {
 
 /* Global Transitions */
 .calculator__input-container,
-.calculator__tip-btn,
 .calculator__input-wrapper--custom,
 .calculator__input--custom,
+.calculator__tip-btn,
 .calculator__reset-btn {
   transition:
     background-color 0.15s ease,
@@ -370,8 +370,8 @@ input[type="number"] {
    ========================================================================== */
 @media (min-width: 60em) {
   body {
-    justify-content: center;
-    padding-block-start: 0;
+    justify-content: flex-start;
+    padding-block-start: clamp(3.5rem, 2rem + 4vw, 8rem);
   }
 
   .calculator {
