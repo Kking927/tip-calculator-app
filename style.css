@@ -39,10 +39,10 @@
 
 .sr-only {
   position: absolute;
-  width: 1px;
+  width: clamp(0.0625rem, 0.05rem + 0.05vw, 0.125rem);
   height: 1px;
   padding: 0;
-  margin: -1px;
+  margin: -0.0625rem;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
@@ -412,7 +412,7 @@ input[type="number"] {
   }
 
   .calculator__reset-btn {
-    margin-top: auto;
+    margin-block-start: auto;
   }
 }
 
