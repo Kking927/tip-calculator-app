@@ -374,27 +374,37 @@ input[type="number"] {
    ========================================================================== */
 @media (min-width: 60em) {
   body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    min-height: 100dvh;
   }
 
   .calculator {
-    width: auto;
-    min-height: auto;
+    width: 100%;
+    max-width: 57.5rem;
+    min-height: auto; /* Clears out the 100dvh from mobile */
+    height: auto;     /* Prevents it from stretching */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   .calculator__logo {
-    margin-block-start: clamp(4rem, 2.5rem + 3vw, 9.375rem);
-    margin-block-end: clamp(4.5rem, 3.5rem + 1.5vw, 6.5rem);
+    margin-block-start: 0;
+    margin-block-end: clamp(3.5rem, 2.5rem + 1.5vw, 5rem);
   }
 
   .calculator__card {
+    width: 100%;
     max-width: 57.5rem;
-    flex-grow: 0;
     border-radius: 1.5rem;
     padding: clamp(1.5rem, 1.125rem + 1vw, 1.875rem);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 3rem;
+    flex-grow: 0; /* Ensures the card doesn't vertically stretch */
   }
 
   .calculator__inputs {
