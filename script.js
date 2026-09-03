@@ -10,15 +10,16 @@ const totalAmountOutput = document.getElementById('total-amount');
 const peopleError = document.getElementById('people-error');
 const peopleInputContainer = peopleInput ? peopleInput.closest('.calculator__input-container') : null;
 
-// Prevent form submission on Enter key
+let selectedTipPercent = 0;
+
+// Prevent form submission and trigger validation on Enter key
 const calculatorForm = document.querySelector('form.calculator__card');
 if (calculatorForm) {
   calculatorForm.addEventListener('submit', (e) => {
     e.preventDefault();
+    calculateTip();
   });
 }
-
-let selectedTipPercent = 0;
 
 // Update the RESET button state (Disabled vs Enabled)
 function updateResetButtonState() {
@@ -33,18 +34,30 @@ function updateResetButtonState() {
 // Main calculation logic
 function calculateTip() {
   const billValue = parseFloat(billInput.value) || 0;
-  const peopleValue = parseInt(peopleInput.value, 10) || 0;
+  const rawPeople = peopleInput.value.trim();
+  const peopleValue = parseInt(rawPeople, 10) || 0;
 
-  // Handle "Zero People" Validation
-  if (peopleInput.value !== '' && peopleValue === 0) {
-    if (peopleError) peopleError.textContent = "Can't be zero";
-    if (peopleInputContainer) peopleInputContainer.classList.add('calculator__input-container--error');
+  // Validation conditions
+  const isZero = rawPeople === '0';
+  const startsWithZero = /^0\d+/.test(rawPeople);
+  const isEmpty = rawPeople === '';
+
+  // Trigger error state on empty input, literal 0, or leading zeroes (e.g. 05)
+  if (isZero || startsWithZero || isEmpty) {
+    if (peopleError) {
+      peopleError.textContent = isEmpty ? "Can't be blank" : "Can't be zero";
+    }
+    if (peopleInputContainer) {
+      peopleInputContainer.classList.add('calculator__input-container--error');
+    }
     tipAmountOutput.textContent = '$0.00';
     totalAmountOutput.textContent = '$0.00';
     return;
   } else {
     if (peopleError) peopleError.textContent = '';
-    if (peopleInputContainer) peopleInputContainer.classList.remove('calculator__input-container--error');
+    if (peopleInputContainer) {
+      peopleInputContainer.classList.remove('calculator__input-container--error');
+    }
   }
 
   // Calculate if valid inputs exist
