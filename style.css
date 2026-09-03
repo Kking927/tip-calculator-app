@@ -373,6 +373,15 @@ input[type="number"] {
    Desktop Layout
    ========================================================================== */
 @media (min-width: 60em) {
+  body {
+    justify-content: center;
+  }
+
+  .calculator {
+    width: auto;
+    min-height: auto;
+  }
+  
   .calculator__logo {
     margin-block-start: clamp(4rem, 2.5rem + 3vw, 9.375rem);
     margin-block-end: clamp(4.5rem, 3.5rem + 1.5vw, 6.5rem);
