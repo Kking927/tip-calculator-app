@@ -382,24 +382,18 @@ input[type="number"] {
   }
 
   .calculator__logo {
-    margin-block-start: 0;
-    margin-block-end: clamp(2.5rem, 1.5rem + 2vw, 3.5rem);
+    margin-block-start: clamp(3.5rem, 2rem + 4vw, 6.5rem);
+    margin-block-end: clamp(2.5rem, 1rem + 2.5vw, 5rem);
   }
 
   .calculator__card {
     max-width: 57.5rem;
     flex-grow: 0;
     border-radius: 1.5rem;
-    padding: 2.5rem;
+    padding: 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 3rem;
-  }
-
-  .calculator__inputs {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 
   .calculator__tip-grid {
