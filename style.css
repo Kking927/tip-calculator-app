@@ -309,7 +309,7 @@ input[type="number"] {
   flex-direction: column;
   gap: clamp(1rem, 0.75rem + 1vw, 1.75rem);
   border-radius: 1rem;
-  padding: clamp(1.5rem, 1rem + 2vw, 2.5rem) clamp(1.25rem, 1rem + 1.5vw, 2rem);
+  padding: clamp(1.5rem, 1rem + 2vw, 2.5rem) clamp(1.25rem, 0.75rem + 2vw, 2.5rem);
 }
 
 .calculator__result-row {
@@ -397,13 +397,17 @@ input[type="number"] {
     column-gap: 3rem;
   }
 
+  .calculator__inputs {
+    padding: 1rem;
+  }
+
   .calculator__tip-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
   .calculator__results {
     justify-content: space-between;
-    padding: 3.25rem 2.5rem 2.5rem 2.5rem;
+    padding-block-start: 3.25rem;
   }
 
   .calculator__reset-btn {
