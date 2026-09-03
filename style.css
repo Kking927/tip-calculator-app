@@ -20,6 +20,7 @@
   /* Typography */
   --font-family: "Space Mono", monospace;
   --fw-bold: 700;
+  --fs-label: clamp(0.875rem, 0.8rem + 0.3vw, 1rem);
   --fs-inputs: 1.5rem; /* 24px */
   --fs-body: clamp(0.875rem, 0.75rem + 0.5vw, 1rem);
   --fs-btn: clamp(1.125rem, 1rem + 0.5vw, 1.25rem);
@@ -56,6 +57,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  padding-block-start: clamp(1.5rem, 1rem + 2vw, 3.5rem);
   background-color: var(--grey-200);
   font-family: var(--font-family);
   font-weight: var(--fw-bold);
@@ -77,8 +79,8 @@ body {
 }
 
 .calculator__logo {
-  margin-block-start: clamp(2rem, 1rem + 5vw, 4rem);
-  margin-block-end: clamp(2.5rem, 1.5rem + 3.5vw, 4rem);
+  margin-block-start: 0;
+  margin-block-end: clamp(2.25rem, 1.5rem + 2.5vw, 4rem);
 }
 
 /* Fieldset Reset */
@@ -155,7 +157,7 @@ input[type="number"] {
 
 .calculator__label {
   color: var(--grey-500);
-  font-size: 1rem;
+  font-size: var(--fs-label);
   display: block;
 }
 
@@ -369,11 +371,6 @@ input[type="number"] {
    Desktop Layout
    ========================================================================== */
 @media (min-width: 60em) {
-  body {
-    justify-content: flex-start;
-    padding-block-start: clamp(3.5rem, 2rem + 4vw, 8rem);
-  }
-
   .calculator {
     width: auto;
   }
