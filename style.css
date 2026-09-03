@@ -379,7 +379,7 @@ input[type="number"] {
     align-items: center;
     justify-content: center;
     min-height: 100dvh;
-    padding-bottom: 8vh;
+    padding-bottom: 12vh;
   }
 
   .calculator {
@@ -405,7 +405,7 @@ input[type="number"] {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 3rem;
-    flex-grow: 0; /* Ensures the card doesn't vertically stretch */
+    flex-grow: 0;
   }
 
   .calculator__inputs {
