@@ -379,13 +379,14 @@ input[type="number"] {
     align-items: center;
     justify-content: center;
     min-height: 100dvh;
+    padding-bottom: 8vh;
   }
 
   .calculator {
     width: 100%;
     max-width: 57.5rem;
-    min-height: auto; /* Clears out the 100dvh from mobile */
-    height: auto;     /* Prevents it from stretching */
+    min-height: auto;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
