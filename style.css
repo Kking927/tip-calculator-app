@@ -368,7 +368,7 @@ input[type="number"] {
    ========================================================================== */
 @media (min-width: 60em) {
   body {
-    justify-content: center; /* Dead-centers the entire component vertically */
+    justify-content: center;
   }
 
   .calculator {
@@ -377,7 +377,7 @@ input[type="number"] {
 
   .calculator__logo {
     margin-block-start: 0;
-    margin-block-end: clamp(3rem, 1.5rem + 3.5vw, 5rem);
+    margin-block-end: clamp(1.5rem, 0.75rem + 1.75vw, 2.5rem);
   }
 
   .calculator__card {
