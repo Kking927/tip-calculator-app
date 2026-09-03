@@ -79,8 +79,8 @@ body {
 }
 
 .calculator__logo {
-  margin-block-start: clamp(4.875rem, 2rem + 5vw, 10.375rem);
-  margin-block-end: clamp(2.5rem, 1.5rem + 3.5vw, 5.5rem);
+  margin-block-start: clamp(4.875rem, -0.5rem + 10vw, 10.375rem);
+  margin-block-end: clamp(2.5rem, 0.5rem + 4vw, 5.5rem);
 }
 
 /* Fieldset Reset */
@@ -384,14 +384,6 @@ input[type="number"] {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 3rem;
-  }
-
-  .calculator__inputs {
-    padding-block: 1rem;
-    padding-inline: 0.75rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 
   .calculator__tip-grid {
