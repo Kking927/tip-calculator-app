@@ -324,7 +324,7 @@ input[type="number"] {
 
 .calculator__result-title {
   color: var(--white);
-  font-size: 1rem;
+  font-size: var(--fs-body);
 }
 
 .calculator__result-subtitle {
