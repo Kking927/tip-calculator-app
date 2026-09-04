@@ -379,7 +379,7 @@ input[type="number"] {
     align-items: center;
     min-height: 100dvh;
     justify-content: flex-start;
-    padding-top: clamp(4rem, 12vh, 8rem);
+    padding-top: clamp(5rem, 20vh, 10rem);
     padding-bottom: 3rem;
   }
 
