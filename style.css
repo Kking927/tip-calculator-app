@@ -102,21 +102,6 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-/* Buttons */
-.calculator__tip-btn {
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: var(--fw-bold);
-}
-
-.calculator__reset-btn {
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: var(--fw-bold);
-}
-
 /* Custom focus style for accessibility */
 .calculator__tip-btn:focus-visible {
   outline: 2px solid var(--green-400);
@@ -204,14 +189,12 @@ fieldset.calculator__fieldset > legend.calculator__label {
   outline: none;
 }
 
-.calculator__input-container:hover,
-.calculator__input--custom:hover {
+.calculator__input-container:hover {
   box-shadow: inset 0 0 0 2px var(--green-400);
   cursor: pointer;
 }
 
-.calculator__input-container:focus-within,
-.calculator__input--custom:focus {
+.calculator__input-container:focus-within {
   outline: none;
   box-shadow: inset 0 0 0 2px var(--green-400);
   border-radius: 0.3125rem;
@@ -258,6 +241,17 @@ fieldset.calculator__fieldset > legend.calculator__label {
     outline 0.15s ease;
 }
 
+.calculator__input--custom:hover {
+  box-shadow: inset 0 0 0 2px var(--green-400);
+  cursor: pointer;
+}
+
+.calculator__input--custom:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 2px var(--green-400);
+  border-radius: 0.3125rem;
+}
+
 /* Reveals the % sign ONLY when a value is typed */
 .calculator__input--custom:not(:placeholder-shown)
   ~ .calculator__custom-suffix {
@@ -294,6 +288,10 @@ fieldset.calculator__fieldset > legend.calculator__label {
 
 /* Tip Buttons */
 .calculator__tip-btn {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: var(--fw-bold);
   color: var(--white);
   background-color: var(--green-900);
   font-size: var(--fs-btn);
@@ -365,6 +363,10 @@ fieldset.calculator__fieldset > legend.calculator__label {
 
 /* Reset Button */
 .calculator__reset-btn {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: var(--fw-bold);
   color: var(--green-900);
   background-color: var(--green-400);
   padding-block: clamp(0.375rem, 0.3rem + 0.3vw, 0.5rem);
@@ -409,7 +411,7 @@ fieldset.calculator__fieldset > legend.calculator__label {
     align-items: center;
     min-height: 100dvh;
     justify-content: flex-start;
-    padding-block-start: clamp(5.875rem, 20vh, 10.875rem);
+    padding-block-start: clamp(5.75rem, 18vh, 10.75rem);
     margin-block-end: clamp(2rem, 1.35rem + 2.13vw, 3rem);
   }
 
