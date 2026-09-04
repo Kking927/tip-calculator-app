@@ -160,7 +160,7 @@ input[type="number"] {
   color: var(--grey-500);
   font-size: var(--fs-label);
   display: block;
-  margin-block-end: clamp(0.375rem, 0.25rem + 0.5vw, 0.625rem);
+  margin-block-end: clamp(0.375rem, 0.25rem + 0.5vw, 0.5rem);
 }
 
 /* Error Text Message */
@@ -420,7 +420,7 @@ input[type="number"] {
 
   .calculator__results {
     justify-content: space-between;
-    padding-block-start: clamp(1.5rem, 1rem + 2vw, 3rem);
+    padding-block-start: clamp(1.5rem, 1rem + 2vw, 2.5rem);
   }
 
   .calculator__reset-btn {
