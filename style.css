@@ -436,16 +436,8 @@ input[type="number"] {
     flex-grow: 0;
   }
 
-  .calculator__inputs {
-    padding: clamp(0.875rem, 0.75rem + 0.5vw, 1.25rem);
-  }
-
   .calculator__tip-grid {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .calculator__results {
-    justify-content: space-between;
   }
 
   .calculator__reset-btn {
