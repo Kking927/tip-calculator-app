@@ -254,16 +254,6 @@ input[type="number"] {
     outline 0.15s ease;
 }
 
-.calculator__custom-suffix {
-  position: absolute;
-  right: 0.75rem;
-  color: var(--green-900);
-  font-size: var(--fs-inputs);
-  font-weight: var(--fw-bold);
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.15s ease;
-}
 
 /* Reveals the % sign ONLY when a value is typed */
 .calculator__input--custom:not(:placeholder-shown)
@@ -279,6 +269,17 @@ input[type="number"] {
 .calculator__input--custom:not(:placeholder-shown) {
   text-align: right;
   padding-inline-end: clamp(1.75rem, 1.2rem + 1.5vw, 2.25rem);
+}
+
+.calculator__custom-suffix {
+  position: absolute;
+  right: 0.75rem;
+  color: var(--green-900);
+  font-size: var(--fs-inputs);
+  font-weight: var(--fw-bold);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
 }
 
 /* Tip Grid */
