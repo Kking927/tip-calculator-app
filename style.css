@@ -21,10 +21,10 @@
   --font-family: "Space Mono", monospace;
   --fw-bold: 700;
   --fs-label: clamp(0.875rem, 0.8rem + 0.3vw, 1rem);
-  --fs-inputs: 1.5rem; /* 24px */
+  --fs-inputs: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem); /* 24px */
   --fs-body: clamp(0.875rem, 0.75rem + 0.5vw, 1rem);
   --fs-subtitle: clamp(0.75rem, 0.7rem + 0.25vw, 0.8125rem);
-  --fs-btn: clamp(1.125rem, 1rem + 0.5vw, 1.25rem);
+  --fs-btn: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
   --fs-number: clamp(1.5rem, 0.9718rem + 2.2535vw, 3rem);
 }
 
@@ -128,52 +128,6 @@ input[type="number"] {
   outline-offset: 2px;
 }
 
-/* Global Transitions */
-.calculator__input-container {
-  transition:
-    background-color 0.15s ease,
-    color 0.15s ease,
-    transform 0.1s ease,
-    box-shadow 0.15s ease,
-    outline 0.15s ease;
-}
-
-.calculator__input-wrapper--custom {
-  transition:
-    background-color 0.15s ease,
-    color 0.15s ease,
-    transform 0.1s ease,
-    box-shadow 0.15s ease,
-    outline 0.15s ease;
-}
-
-.calculator__input--custom {
-  transition:
-    background-color 0.15s ease,
-    color 0.15s ease,
-    transform 0.1s ease,
-    box-shadow 0.15s ease,
-    outline 0.15s ease;
-}
-
-.calculator__tip-btn {
-  transition:
-    background-color 0.15s ease,
-    color 0.15s ease,
-    transform 0.1s ease,
-    box-shadow 0.15s ease,
-    outline 0.15s ease;
-}
-
-.calculator__reset-btn {
-  transition:
-    background-color 0.15s ease,
-    color 0.15s ease,
-    transform 0.1s ease,
-    box-shadow 0.15s ease,
-    outline 0.15s ease;
-}
-
 /* ==========================================================================
    Component Styles
    ========================================================================== */
@@ -226,6 +180,12 @@ input[type="number"] {
   padding: 0.375rem clamp(0.75rem, 0.5rem + 1vw, 1.25rem);
   border-radius: 0.3125rem;
   outline: none;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.1s ease,
+    box-shadow 0.15s ease,
+    outline 0.15s ease;
 }
 
 .calculator__input {
@@ -266,6 +226,12 @@ input[type="number"] {
   align-items: center;
   justify-content: center;
   width: 100%;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.1s ease,
+    box-shadow 0.15s ease,
+    outline 0.15s ease;
 }
 
 .calculator__input--custom {
@@ -280,6 +246,12 @@ input[type="number"] {
   color: var(--green-900);
   border: none;
   outline: none;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.1s ease,
+    box-shadow 0.15s ease,
+    outline 0.15s ease;
 }
 
 .calculator__custom-suffix {
@@ -323,6 +295,12 @@ input[type="number"] {
   font-size: var(--fs-btn);
   padding: 0.375rem clamp(0.75rem, 0.5rem + 1vw, 1.25rem);
   border-radius: 0.3125rem;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.1s ease,
+    box-shadow 0.15s ease,
+    outline 0.15s ease;
 }
 
 /* Active State Styles */
@@ -390,8 +368,14 @@ input[type="number"] {
   border-radius: 0.3125rem;
   text-transform: uppercase;
   font-size: var(--fs-btn);
-  margin-block-start: clamp(2rem, 1.25rem + 2vw, 2.5rem);
+  margin-block-start: clamp(2rem, 1.25rem + 2vw, 2rem);
   width: 100%;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.1s ease,
+    box-shadow 0.15s ease,
+    outline 0.15s ease;
 }
 
 /* Page Load / Disabled State */
