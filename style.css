@@ -409,8 +409,8 @@ fieldset.calculator__fieldset > legend.calculator__label {
     align-items: center;
     min-height: 100dvh;
     justify-content: flex-start;
-    padding-block-start: clamp(5rem, 20vh, 10rem);
-    padding-block-end: clamp(1.5rem, 1.5rem + 2vw, 3rem);
+    padding-block-start: clamp(5.875rem, 20vh, 10.875rem);
+    margin-block-end: clamp(2rem, 1.35rem + 2.13vw, 3rem);
   }
 
   .calculator {
@@ -421,7 +421,7 @@ fieldset.calculator__fieldset > legend.calculator__label {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: clamp(3.5rem, 3rem + 2vw, 5.125rem);
+    gap: clamp(4rem, 3.25rem + 2.5vw, 6rem);
   }
 
   .calculator__logo {
