@@ -379,8 +379,8 @@ input[type="number"] {
     align-items: center;
     min-height: 100dvh;
     justify-content: flex-start;
-    padding-top: clamp(5rem, 20vh, 10rem);
-    padding-bottom: 3rem;
+    padding-block-start: clamp(5rem, 20vh, 10rem);
+    padding-block-end: clamp(1.5rem, 1.5rem + 2vw, 3rem);
   }
 
   .calculator {
@@ -420,7 +420,7 @@ input[type="number"] {
 
   .calculator__results {
     justify-content: space-between;
-    padding-block-start: 3.25rem;
+    padding-block-start: clamp(1.5rem, 1rem + 2vw, 3rem);
   }
 
   .calculator__reset-btn {
