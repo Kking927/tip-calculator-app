@@ -374,12 +374,13 @@ input[type="number"] {
    ========================================================================== */
 @media (min-width: 60em) {
   body {
-    display: flex;
+    display: flex; 
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     min-height: 100dvh;
-    padding-bottom: 9vh;
+    justify-content: flex-start;
+    padding-top: clamp(4rem, 12vh, 8rem);
+    padding-bottom: 3rem;
   }
 
   .calculator {
@@ -409,7 +410,7 @@ input[type="number"] {
   }
 
   .calculator__inputs {
-    padding: 1rem;
+    padding: clamp(0.875rem, 0.75rem + 0.5vw, 1.25rem);
   }
 
   .calculator__tip-grid {
