@@ -420,7 +420,6 @@ input[type="number"] {
 
   .calculator__results {
     justify-content: space-between;
-    padding-block-start: clamp(1.5rem, 1rem + 2vw, 2.5rem);
   }
 
   .calculator__reset-btn {
