@@ -411,7 +411,7 @@ fieldset.calculator__fieldset > legend.calculator__label {
     align-items: center;
     min-height: 100dvh;
     justify-content: flex-start;
-    padding-block-start: clamp(5.625rem, 17.5vh, 10.5rem);
+    padding-block-start: clamp(5.5rem, 17vh, 10.25rem);
     margin-block-end: clamp(2rem, 1.35rem + 2.13vw, 3rem);
   }
 
