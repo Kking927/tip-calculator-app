@@ -305,16 +305,18 @@ fieldset.calculator__fieldset > legend.calculator__label {
     outline 0.15s ease;
 }
 
-/* Active State Styles */
-.calculator__tip-btn:hover,
-.calculator__reset-btn:hover:not(:disabled) {
+/* Tip Buttons States */
+.calculator__tip-btn:focus-visible {
+  outline: 2px solid var(--green-400);
+  outline-offset: 2px;
+}
+
+.calculator__tip-btn:hover {
   color: var(--green-900);
   background-color: color-mix(in srgb, var(--green-400), var(--grey-200));
 }
 
-.calculator__tip-btn:active,
-.calculator__reset-btn:active,
-.calculator__input-wrapper--custom:focus-within {
+.calculator__tip-btn:active {
   transform: scale(0.97);
 }
 
@@ -322,6 +324,20 @@ fieldset.calculator__fieldset > legend.calculator__label {
 .calculator__tip-btn--active:hover {
   color: var(--green-900);
   background-color: var(--green-400);
+}
+
+/* Reset Button States */
+.calculator__reset-btn:hover:not(:disabled) {
+  color: var(--green-900);
+  background-color: color-mix(in srgb, var(--green-400), var(--grey-200));
+}
+
+.calculator__reset-btn:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.calculator__input-wrapper--custom:focus-within {
+  transform: scale(0.97);
 }
 
 /* Results Panel */
