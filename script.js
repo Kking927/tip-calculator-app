@@ -105,6 +105,16 @@ customTipInput.addEventListener('input', () => {
   });
 });
 
+// Clean up the bill input value when the user clicks away (loses focus)
+billInput.addEventListener('blur', () => {
+    const value = parseFloat(billInput.value);
+    
+    // If it's a valid number, format it to always have 2 decimal places
+    if (!isNaN(value)) {
+        billInput.value = value.toFixed(2); // Converts "010" -> "10", "5.5" -> "5.50"
+    }
+});
+
 // Reset Calculator Functionality
 resetBtn.addEventListener('click', () => {
   billInput.value = '';
